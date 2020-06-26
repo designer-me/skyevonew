@@ -1,0 +1,638 @@
+/* ================================================================= */
+/* ========================== RESET START ========================== */
+/* === primary reset start === */ 
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0;
+    outline: 0;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+         -o-box-sizing: border-box;
+            box-sizing: border-box;
+}
+body {
+    overflow-x: hidden !important;
+    font-size: 13px;
+}
+a {
+    text-decoration: none;
+    outline: 0 !important;
+}
+a,
+*:after,
+*:before {
+    -webkit-transition: all .3s linear;
+       -moz-transition: all .3s linear;
+        -ms-transition: all .3s linear;
+         -o-transition: all .3s linear;
+            transition: all .3s linear;
+}
+a:hover,
+a:active,
+a:visited,
+a:focus {
+    text-decoration: none;
+    color: inherit;
+    background: inherit;
+    outline: 0 !important;
+}
+a:focus {
+    border: 0 !important;
+ }
+ol,
+ul,
+li {
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+input,
+textarea {
+    border: 0 !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+    resize: none;
+    background-color: transparent;
+}
+input:focus,
+textarea:focus {
+    box-shadow: none !important;
+    border: 0 !important;
+    outline: 0 !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+textarea::-webkit-input-placeholder,
+input::-webkit-input-placeholder {
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
+textarea::-moz-placeholder,
+input::-moz-placeholder {
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
+textarea:-ms-input-placeholder,
+input:-ms-input-placeholder {
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
+textarea::placeholder,
+input::placeholder {
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
+button {
+    background-color: transparent;
+    border: 0;
+}
+img {
+    max-width: 100%;
+}
+::-moz-selection {
+    background: #7da500;
+    color: #fff;
+    text-shadow: none;
+}
+::selection {
+    background: #00BDFD;
+    color: #fff;
+    text-shadow: none;
+}
+.list-inline {
+    margin-left: 0;
+}
+.list-inline > li {
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+.panel-heading {
+    background-color: transparent !important;
+    border: 0 !important;
+    padding: 0 !important;
+    border-radius: 0;
+}
+.panel {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.panel-default {
+    border: 0 !important;
+}
+/* font-family */
+.f1 {
+    font-family: 'Lato', sans-serif;
+}
+.f2 {
+    font-family: 'Lora', serif;
+}
+/* font-family end */
+/* === primary reset end === */
+
+/* colors */
+.c-1 {
+    color: #7da500 !important
+}
+
+.c-2 {
+    color: #f26522 !important
+}
+
+.c-3 {
+    color: #777 !important
+}
+
+.c-dark-1 {
+    color: #000 !important
+}
+
+.c-dark-2 {
+    color: #222 !important;
+}
+
+.cw {
+    color: #fff !important
+}
+
+.bg-c-1 {
+    background: #7da500 !important
+}
+
+.bg-c-2 {
+    background: #f26522 !important
+}
+
+.bg-c-3 {
+    background: #222 !important
+}
+
+.bg-cw {
+    background: #fff !important
+}
+/* colors end */
+/* === text-format end === */
+
+/* ==== OTHER DEFAULT CLASES END  ==== */
+/* theme padding and margin start */
+.sp-lg {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.sp-md {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.sp-sm {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.sp-xs {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.spt-lg {
+    padding-top: 150px;
+}
+
+.spb-lg {
+    padding-bottom: 150px;
+}
+
+.spt-md {
+    padding-top: 100px;
+}
+
+.spb-md {
+    padding-bottom: 100px;
+}
+
+.spt-sm {
+    padding-top: 50px;
+}
+
+.spb-sm {
+    padding-bottom: 50px;
+}
+
+.spt-xs {
+    padding-top: 30px;
+}
+
+.spb-xs {
+    padding-bottom: 30px;
+}
+
+.spl-xs-x {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.spl-xs {
+    padding-left: 30px;
+}
+
+.spr-xs {
+    padding-right: 30px;
+}
+
+.pt-20 {
+    padding-top: 20px;
+}
+
+.pb-20 {
+    padding-bottom: 20px;
+}
+
+.pt-10 {
+    padding-top: 10px;
+}
+
+.pb-10 {
+    padding-bottom: 10px;
+}
+
+.pl-10 {
+    padding-left: 10px;
+}
+
+.pr-10 {
+    padding-right: 10px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+/* theme padding and margin end */
+
+/*bootstrap padding reset start*/
+.epd {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.epd-x {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.epd-x-r {
+    padding-right: 0 !important;
+}
+
+.epd-x-l {
+    padding-left: 0 !important;
+}
+
+.epd-y {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.epd-y-t {
+    padding-top: 0 !important;
+}
+
+.epd-y-b {
+    padding-bottom: 0 !important;
+}
+
+.pd-x-25 {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.pd-x-30 {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.pd-x-l-30 {
+    padding-left: 30px;
+}
+
+.pd-x-r-30 {
+    padding-right: 30px;
+}
+
+.pd-x-l-25 {
+    padding-left: 25px;
+}
+
+.pd-x-r-25 {
+    padding-right: 25px;
+}
+
+.pd-x-10 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.pd-x-l-10 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.pd-x-r-10 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.row-10 {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+/*bootstrap padding reset start*/
+
+/* display table start */
+.g-table {
+    position: relative;
+    width: 100%;
+    height: 100%;   
+    display: table;
+}
+
+.d-middle,
+.d-top,
+.d-bottom {
+    display: table-cell;
+}
+
+.d-middle {
+    vertical-align: middle;
+}
+
+.d-top {
+    vertical-align: top;
+}
+
+.d-bottom {
+    vertical-align: bottom;
+}
+/* display table end */
+
+/* position relative and absolute start */
+.pos-r {
+    position: relative;
+}
+
+.pos-tl,
+.pos-tr,
+.pos-bl,
+.pos-br {
+    position: absolute;
+}
+
+.pos-tl {
+    top: 0;
+    left: 0;
+}
+
+.pos-tr {
+    top: 0;
+    right: 0;
+}
+
+.pos-bl {
+    bottom: 0;
+    left: 0;
+}
+
+.pos-br {
+    bottom: 0;
+    right: 0;
+}
+/* position relative and absolute end */
+
+/* === back2Top start === */
+.back2Top {
+    padding: 0 15px;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    background: #7da500 !important;
+    color: #fff;
+    opacity: .4;
+
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+    
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    cursor: pointer;
+    display: none;
+    z-index: 99;
+}
+
+.back2Top:before {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.back2Top:hover {
+    opacity: 1;
+}
+/* === back2Top end === */
+.clr {
+    clear: both;
+}
+
+.t-clear-xs {
+    display: none;
+}
+
+.t-clear-2 {
+    display: none;
+}
+/* ==== OTHER DEFAULT CLASES END  ==== */
+
+/* === text-format start === */
+/* section heading */
+.section-h1,
+.section-h2,
+.section-h3,
+.section-h4 {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.section-h1,
+.section-h3,
+.section-h4 {
+    line-height: 30px;
+}
+
+.section-h1 {
+    font-size: 30px;
+    padding-bottom: 12px;
+}
+
+
+/* section heading end */
+
+/* global text */
+.g-txt,
+.g-txt-2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #777;
+}
+
+.g-txt {
+    line-height: 28px;
+}
+
+.g-txt-2 {
+    line-height: 26px;
+}
+
+.t-icon {
+    display: inline-block;
+}
+/* global text end */
+
+/* global buttons start */
+.g-btn-sm,
+.g-btn-lg {
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    color: #fff !important;
+    text-transform: uppercase;
+}
+
+.g-btn-sm {
+    font-size: 11px;
+    padding: 10.5px 30px;
+    background: #f26522;
+}
+.g-btn-lg {
+    font-size: 13px;
+    padding: 15px 30px;
+}
+
+ .btn-b-red {
+    -webkit-box-shadow: 0 2px 0 #BB3C00;
+    box-shadow: 0 2px 0 #BB3C00;
+}
+
+ .btn-b-green {
+    -webkit-box-shadow: 0 2px 0 #4b6300;
+    box-shadow: 0 2px 0 #4b6300;
+}
+/* global buttons end */
+
+/* global hover effects start */
+.hvr-1,
+.hvr-2 {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.hvr-1:after,
+.hvr-2:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    
+    left: 0;
+    top: 100%;
+    z-index: -1;
+}
+
+.hvr-1:after {
+    background: #BB3C00 !important;
+}
+
+.hvr-2:after {
+    background: #4b6300 !important;
+}
+
+.hvr-1:hover:after,
+.hvr-2:hover:after {
+    top: 0;
+}
+
+.hvr-1:hover,
+.hvr-2:hover {
+    background-color: transparent !important;
+    color: #fff;
+    -webkit-transition-delay: .3s;
+    transition-delay: .3s;
+}
+
+.g-hvr:hover {
+    background: #fff !important;
+    color: #7da500 !important;
+}
+
+.g-hvr-2:hover {
+    background: #fff !important;
+    color: #f26522 !important;
+}
+
+.g-hvr-3:hover {
+    background: #7da500 !important;
+    color: #fff !important;
+}
+
+.g-hvr-4:hover {
+    background: #f26522 !important;
+    color: #fff !important;
+}
+/* global hover effects end */
+/* ============================================ */
+/* ========== OTHER PAGE HEAD START ========== */
+/* ========================================== */
+.other-page-heading {
+    height: 355px;
+    -webkit-background-size: content-box !important;
+    background-size: content-box !important;
+    -webkit-background-repeat: no-repeat !important;
+    background-repeat: no-repeat !important;
+    -webkit-background-attachment: fixed !important;
+    background-attachment: fixed !important;
+    -webkit-background-position: top center !important;
+    background-position: top center !important;
+    z-index: 1;
+}
+
+.other-page-heading:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.9);
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.heading-txt {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 26px;
+}
+/* ============================================ */
+/* =========== OTHER PAGE HEAD END =========== */
+/* ========================================== */
+
+/* =========================== RESET END =========================== */
+/* ================================================================= */
